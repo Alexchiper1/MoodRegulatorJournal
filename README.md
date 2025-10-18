@@ -1,2 +1,2 @@
 # MoodRegulatorJournal
-An AI-powered mood journal with sentiment analysis, built using Node.js, Express, and SQLite.
+Developed an AI-powered mood journaling web application that analyzed user entries using natural language sentiment analysis, visualized emotional trends, and improved user self-awareness through data insights, built with Node.js, Express, SQLite, Sentiment.js, Chart.js, and Git/GitHub.
