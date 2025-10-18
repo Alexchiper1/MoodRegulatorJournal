@@ -1,0 +1,21 @@
+{
+  "name": "moodmate",
+  "version": "1.0.0",
+  "description": "AI-powered daily journal with sentiment analysis and mood trends",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js"
+  },
+  "keywords": ["node", "express", "sqlite", "chartjs", "sentiment", "journal"],
+  "author": "Alex Chiper",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sentiment": "^5.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

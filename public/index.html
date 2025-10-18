@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Journal - MoodJournal</title>
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>🌤️ MoodJournalRegulator</h1>
+    <p class="subtitle">AI-powered daily journal with mood trends</p>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>Write today’s entry</h2>
+      <form id="entryForm">
+        <textarea id="entryText" rows="5" placeholder="How are you feeling today?"></textarea>
+        <div class="actions">
+          <button type="submit">Analyze & Save</button>
+          <button type="button" id="clearBtn" class="secondary">Clear</button>
+        </div>
+      </form>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>7-Day Mood Trend</h2>
+      <canvas id="moodChart" height="160"></canvas>
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <section class="card">
+      <h2>Recent entries</h2>
+      <ul id="entriesList" class="entries"></ul>
+    </section>
+  </main>
+
+  <footer class="container muted">
+    <small>Built with Node.js, SQLite, Chart.js, and Sentiment.</small>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
